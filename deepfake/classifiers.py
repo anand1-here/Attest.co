@@ -17,7 +17,7 @@ except ImportError:
 IMGWIDTH = 256
 
 class Classifier:
-    def __init__():
+    def __init__(self):
         self.model = 0
     
     def predict(self, x):
