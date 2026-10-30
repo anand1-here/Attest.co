@@ -7,6 +7,7 @@ import {
   FileText,
   UploadCloud,
   ShieldCheck,
+  ScanFace,
   Lock,
   Activity
 } from "lucide-react";
@@ -40,6 +41,13 @@ const cards = [
     icon: ShieldCheck,
     path: "/verify-evidence",
     accent: "orange"
+  },
+  {
+    title: "Deepfake Check",
+    desc: "Scan any photo or video",
+    icon: ScanFace,
+    path: "/deepfake-check",
+    accent: "red"
   }
 ];
 

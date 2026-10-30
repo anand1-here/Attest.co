@@ -8,6 +8,7 @@ import AddEvidence from "./AddEvidence";
 import VerifyEvidence from "./VerifyEvidence";
 import ViewEvidence from "./ViewEvidence";
 import SideBySide from "./SideBySide";
+import DeepfakeCheck from "./DeepfakeCheck";
 import ProtectedRoute from "./ProtectedRoute";
 
 const guard = (el) => <ProtectedRoute>{el}</ProtectedRoute>;
@@ -25,6 +26,7 @@ const App = () => (
     <Route path="/add-evidence" element={guard(<AddEvidence />)} />
     <Route path="/verify-evidence" element={guard(<VerifyEvidence />)} />
     <Route path="/dashboard" element={guard(<SideBySide />)} />
+    <Route path="/deepfake-check" element={guard(<DeepfakeCheck />)} />
 
     <Route path="*" element={<Navigate to="/" replace />} />
   </Routes>
