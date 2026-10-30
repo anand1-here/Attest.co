@@ -1,256 +1,131 @@
+::: {align="center"}
 # 🛡️ Attest
+
 ### Blockchain-Based Secure Digital Evidence Platform
 
-<p align="center">
-  <strong>Making Digital Evidence Tamper-Evident, Verifiable & Trustworthy</strong>
-</p>
+**Making Digital Evidence Tamper-Evident, Verifiable & Trustworthy**
 
-<p align="center">
-  <img src="https://img.shields.io/badge/AI-MesoNet-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/BLOCKCHAIN-Solidity-purple?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/FRONTEND-React-61DAFB?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/BACKEND-Node.js-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/DATABASE-PostgreSQL-336791?style=for-the-badge" />
-</p>
+![AI](https://img.shields.io/badge/AI-MesoNet-0A84FF)
+![Blockchain](https://img.shields.io/badge/Blockchain-Solidity-7B2CBF)
+![Frontend](https://img.shields.io/badge/Frontend-React-61DAFB)
+![Backend](https://img.shields.io/badge/Backend-Node.js-5FA04E)
+![Database](https://img.shields.io/badge/Database-PostgreSQL-4169E1)
 
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/anand1-here/Attest.co/main/assets/attest-hash.gif"
-    width="750"
-    alt="Attest SHA-256 Hashing Animation"
-  />
-</p>
+`<img src="assets/attest-hash-animation.gif" alt="Attest SHA-256 hashing and blockchain verification animation" width="850" />`{=html}
 
-<p align="center">
-  🔐 Secure Evidence | 🤖 AI Deepfake Detection | ⛓️ Blockchain Integrity
-</p>
+**🔐 Secure Evidence  \|  🤖 AI Deepfake Detection  \|  ⛓️ Blockchain
+Integrity**
+:::
 
----
+------------------------------------------------------------------------
 
 ## 📌 Overview
 
-**Attest** is a blockchain-powered digital evidence management and verification platform that combines AI-driven deepfake detection, cryptographic hashing, and blockchain technology to ensure the integrity and traceability of digital evidence.
+**Attest** is a digital evidence management and verification platform
+that combines AI-powered deepfake analysis, cryptographic hashing, and
+blockchain technology to help protect the integrity and traceability of
+digital evidence.
 
-It provides two major capabilities:
+It brings together two major capabilities:
 
-- **Evidence Protection:** Secure evidence registration and tamper detection using SHA-256 hashing and blockchain.
-- **Deepfake Detection:** AI-powered analysis of photos and videos to identify potential manipulated media.
+-   **Evidence protection:** Generate a SHA-256 hash for uploaded
+    evidence and register its record on a blockchain, making later
+    integrity checks possible.
+-   **Deepfake detection:** Analyze images and videos using an AI model
+    to estimate whether the submitted media may be manipulated.
 
----
+## ✨ Key Features
 
-## 🎯 Problem Statement
+-   **Evidence upload and tracking** --- Submit digital evidence and
+    associate it with a case and evidence record.
+-   **SHA-256 hashing** --- Generate a cryptographic fingerprint for
+    evidence files.
+-   **Blockchain registration** --- Store evidence hash records through
+    a Solidity smart contract.
+-   **Integrity verification** --- Recalculate and compare hashes to
+    detect changes to a file.
+-   **AI deepfake analysis** --- Analyze media using the MesoNet-based
+    detection component.
+-   **Analysis results** --- Present a REAL/FAKE prediction with a
+    confidence or probability score.
+-   **User authentication and roles** --- Support authenticated access
+    and role-based workflows.
+-   **Dashboard and audit information** --- Help users review evidence
+    records and related activity.
 
-Digital evidence faces several challenges:
+## ⚙️ Technology Stack
 
-- Unauthorized modification and tampering.
-- Deepfake videos and manipulated photographs.
-- Unverifiable chain-of-custody records.
-- Manual and time-consuming forensic verification.
-
-**Attest addresses these challenges through AI-powered analysis and blockchain-backed evidence integrity.**
-
----
-
-## 🚀 Key Features
-
-### 🔐 Digital Evidence Management
-- Secure video evidence upload.
-- Automatic Case ID and Evidence ID generation.
-- SHA-256 cryptographic hash generation.
-- Blockchain-based evidence registration.
-- Evidence metadata and case management.
-
-### 🤖 AI Deepfake Detection
-- **Photo & Video Deepfake Detection** — Upload any supported photo or video for AI-powered deepfake analysis.
-- MesoNet-based deepfake detection.
-- REAL / FAKE classification.
-- Fake probability and confidence score.
-- Automated video frame and face analysis.
-
-### ⛓️ Blockchain Security
-- Solidity-based smart contract.
-- Immutable evidence hash records.
-- Submitter and timestamp tracking.
-- Blockchain transaction verification.
-- Duplicate evidence registration prevention.
-
-### ⚖️ Evidence Verification
-- Verify previously registered evidence.
-- Recalculate and compare SHA-256 hashes.
-- Detect modified or tampered files.
-- Identify unregistered evidence.
-
-### 👤 Security & Monitoring
-- JWT-based authentication.
-- Secure password hashing.
-- User and Admin roles.
-- Evidence dashboard and activity logs.
-
----
+  Area                     Technologies
+  ------------------------ --------------------------------------------
+  Frontend                 React
+  Backend                  Node.js, Express.js
+  Database                 PostgreSQL
+  Blockchain               Solidity, Ganache, Ethers.js
+  AI / Deepfake Analysis   Python, TensorFlow, MesoNet, OpenCV, NumPy
+  Security                 SHA-256, JWT, bcrypt
 
 ## 🔄 How It Works
 
-1. User uploads digital evidence.
-2. Attest generates a unique Evidence ID and SHA-256 hash.
-3. Evidence hash is registered on the blockchain.
-4. Evidence metadata is stored in PostgreSQL.
-5. AI analyzes media for potential deepfake manipulation.
-6. During verification, the file hash is generated again.
-7. The new hash is compared with the blockchain record.
-8. Attest displays the integrity verification result.
+1.  **Submit evidence:** A user uploads a digital evidence file and
+    provides the relevant case details.
+2.  **Generate fingerprint:** Attest calculates the file's SHA-256 hash.
+3.  **Register record:** The hash and associated evidence record are
+    registered through the blockchain smart contract.
+4.  **Verify integrity:** When verification is requested, Attest hashes
+    the file again and compares it with the registered hash.
+5.  **Analyze media:** When deepfake analysis is needed, the media is
+    processed by the AI detection component and a prediction is
+    returned.
 
-**Independent Deepfake Scanner:** Users can also upload any supported photo or video for deepfake analysis without registering it as blockchain evidence.
+## 🧱 Project Components
 
----
+-   **Web application:** User-facing interface for evidence workflows
+    and results.
+-   **Backend services:** Authentication, evidence handling, database
+    operations, and application logic.
+-   **Smart contract:** Blockchain-based registration of evidence hash
+    records.
+-   **Deepfake analysis module:** AI-based media analysis using MesoNet
+    and supporting computer-vision libraries.
 
-## 🧱 System Architecture
+## 🚀 Getting Started
 
-```mermaid
-flowchart TD
-    A["User"] --> B["React Frontend"]
-    B --> C["Node.js + Express Backend"]
+1.  Clone the repository:
 
-    C --> D["SHA-256 Hashing"]
-    D --> E["Solidity Smart Contract"]
-    E --> F["Blockchain"]
+    ``` bash
+    git clone https://github.com/anand1-here/Attest.co.git
+    cd Attest.co
+    ```
 
-    C --> G["PostgreSQL Database"]
+2.  Follow the installation, environment-variable, database, and run
+    instructions in **[SETUP.md](SETUP.md)**.
 
-    C --> H["Python AI Analyzer"]
-    H --> I["MesoNet Deepfake Detection"]
-    I --> J["REAL / FAKE Result"]
-
-    B --> K["Evidence Verification"]
-    K --> D
-```
-
----
-
-## 🛠️ Technology Stack
-
-| Category | Technologies |
-|---|---|
-| Frontend | React.js, React Router, Framer Motion |
-| Backend | Node.js, Express.js |
-| Database | PostgreSQL |
-| Blockchain | Solidity, Ganache, Ethers.js |
-| AI / ML | Python, TensorFlow, MesoNet |
-| Image Processing | OpenCV, NumPy |
-| Security | SHA-256, JWT, bcrypt |
-
----
-
-## 🔌 API Endpoints
-
-| Method | Endpoint | Description |
-|---|---|---|
-| POST | `/auth/register` | User registration |
-| POST | `/auth/login` | User authentication |
-| POST | `/upload` | Upload evidence |
-| POST | `/verify` | Verify evidence integrity |
-| GET | `/cases` | Retrieve evidence cases |
-| GET | `/records` | Retrieve evidence records |
-| GET | `/logs` | Retrieve audit logs |
-| GET | `/health` | System health check |
-
----
-
-## ⚙️ Installation & Setup
-
-### Prerequisites
-- Node.js 18+
-- PostgreSQL
-- Python 3.10–3.12
-- Git
-
-### 1. Clone Repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/Attest.git
-cd Attest
-```
-
-### 2. Install Dependencies
-
-```bash
-npm run install:all
-```
-
-### 3. Install AI Dependencies
-
-```bash
-python -m venv .venv
-```
-
-Activate the virtual environment and install:
-
-```bash
-pip install -r deepfake/requirements.txt
-```
-
-### 4. Configure Environment
-
-Create `backend/.env` and configure database credentials, JWT secret, blockchain RPC URL, and contract address.
-
-Configure the frontend API URL in `frontend/.env`.
-
-### 5. Initialize & Run
-
-```bash
-npm run db:init
-npm run chain
-npm run compile
-npm run deploy
-./start.sh
-```
-
-For detailed configuration and troubleshooting, refer to [SETUP.md](SETUP.md).
-
----
-
-## 🌍 Real-World Applications
-
-- Digital forensic investigations.
-- Cybercrime evidence management.
-- Law enforcement agencies.
-- Deepfake identification.
-- Video authenticity screening.
-- Digital chain-of-custody verification.
-
----
-
-## 🔮 Future Enhancements
-
-- IPFS-based decentralized storage.
-- Advanced deepfake detection models.
-- Metadata anomaly detection.
-- Enhanced forensic reporting.
-- Independent verification portal.
-- Multi-network blockchain support.
-
----
+> Keep credentials and private environment variables out of source
+> control. Use the example environment file as a reference where
+> provided.
 
 ## 👥 Team AlgoFoge
 
-**Building Attest with Blockchain, AI & Cybersecurity.**
-
-| Team Member | Role |
-|---|---|
-| Krishna Kumar | Team Lead |
-| Muskan | Team Member |
-| Anand Kumar Dhakad | Team Member |
-| Divyansh Kumar | Team Member |
-
----
+  Name                 Role
+  -------------------- -------------
+  **Krishna Kumar**    Team Lead
+  Muskan               Team Member
+  Anand Kumar Dhakad   Team Member
+  Divyansh Kumar       Team Member
 
 ## ⚠️ Disclaimer
 
-Attest assists in evidence integrity verification and AI-based authenticity screening. Blockchain registration does not independently prove that original evidence is genuine, and AI predictions are not conclusive forensic proof.
+-   A blockchain record can help demonstrate that a file matches a
+    previously registered hash; it does **not** prove that the original
+    evidence was genuine or accurate.
+-   AI deepfake predictions are probabilistic and should not be treated
+    as definitive proof.
+-   Legal admissibility and evidentiary weight are determined by
+    applicable laws and the relevant judicial authorities.
 
-Legal admissibility remains subject to applicable laws and judicial authorities.
+------------------------------------------------------------------------
 
----
-
-
-  <strong>Built with ❤️ by Team AlgoFoge</strong>
-</p>
+::: {align="center"}
+**Attest --- Protecting Digital Evidence Through AI, Cryptography &
+Blockchain.**
+:::
