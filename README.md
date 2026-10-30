@@ -13,7 +13,11 @@
   <img src="https://img.shields.io/badge/DATABASE-PostgreSQL-336791?style=for-the-badge" />
 </p>
 
-![Attest SHA-256 Hashing Animation](./assets/attest-hash.gif)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/anand1-here/Attest.co/main/assets/attest-hash.gif"
+       width="750"
+       alt="Attest SHA-256 Hash Animation"/>
+</p>
 
 <p align="center">
   🔐 Secure Evidence | 🤖 AI Deepfake Detection | ⛓️ Blockchain Integrity
