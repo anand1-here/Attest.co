@@ -112,7 +112,10 @@ Digital evidence faces several challenges:
 ```mermaid
 flowchart TD
     A["User"] --> B["React Frontend"]
+
+    B --> L["Deepfake Detection"]
     B --> C["Node.js + Express Backend"]
+    B --> K["Evidence Verification"]
 
     C --> D["SHA-256 Hashing"]
     D --> E["Solidity Smart Contract"]
@@ -124,7 +127,6 @@ flowchart TD
     H --> I["MesoNet Deepfake Detection"]
     I --> J["REAL / FAKE Result"]
 
-    B --> K["Evidence Verification"]
     K --> D
 ```
 
