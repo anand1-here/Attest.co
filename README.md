@@ -18,7 +18,15 @@
 </p>
 
 <p align="center">
-  🔐 Secure Evidence &nbsp; | &nbsp; 🤖 AI Deepfake Detection &nbsp; | &nbsp; ⛓️ Blockchain Integrity
+  <img src="./assets/attest-hash.gif"
+       width="750"
+       alt="Attest SHA-256 Hashing Animation">
+</p>
+
+<p align="center">
+  🔐 Secure Evidence &nbsp; | &nbsp;
+  🤖 AI Deepfake Detection &nbsp; | &nbsp;
+  ⛓️ Blockchain Integrity
 </p>
 
 ---
