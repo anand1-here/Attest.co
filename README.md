@@ -1,30 +1,27 @@
+
 # 🛡️ Attest
 
 ### Blockchain-Based Secure Digital Evidence Platform
 
-\<p align="center">\
-&#x20; \<strong>Making Digital Evidence Tamper-Evident, Verifiable & Trustworthy\</strong>\
-\</p>
-
-\<p align="center">\
-&#x20; \<img src="[https://img.shields.io/badge/AI-MesoNet-blue?style=for-the-badge](https://img.shields.io/badge/AI-MesoNet-blue?style=for-the-badge)" />\
-&#x20; \<img src="[https://img.shields.io/badge/BLOCKCHAIN-Solidity-purple?style=for-the-badge](https://img.shields.io/badge/BLOCKCHAIN-Solidity-purple?style=for-the-badge)" />\
-&#x20; \<img src="[https://img.shields.io/badge/FRONTEND-React-61DAFB?style=for-the-badge](https://img.shields.io/badge/FRONTEND-React-61DAFB?style=for-the-badge)" />\
-&#x20; \<img src="[https://img.shields.io/badge/BACKEND-Node.js-green?style=for-the-badge](https://img.shields.io/badge/BACKEND-Node.js-green?style=for-the-badge)" />\
-&#x20; \<img src="[https://img.shields.io/badge/DATABASE-PostgreSQL-336791?style=for-the-badge](https://img.shields.io/badge/DATABASE-PostgreSQL-336791?style=for-the-badge)" />\
-\</p>
-
 <p align="center">
-  <img
-    src="assets/attest-hash-animation.gif"
-    width="750"
-    alt="Attest SHA-256 Hashing Animation"
-  />
+  <strong>Making Digital Evidence Tamper-Evident, Verifiable & Trustworthy</strong>
 </p>
 
-\<p align="center">\
-&#x20; 🔐 Secure Evidence &nbsp; | &nbsp; 🤖 AI Deepfake Detection &nbsp; | &nbsp; ⛓️ Blockchain Integrity\
-\</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/AI-MesoNet-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/BLOCKCHAIN-Solidity-purple?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/FRONTEND-React-61DAFB?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/BACKEND-Node.js-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/DATABASE-PostgreSQL-336791?style=for-the-badge" />
+</p>
+
+<p align="center">
+  <img src="assets/attest-hash-animation.gif" width="700" alt="Attest SHA-256 Hashing Animation" />
+</p>
+
+<p align="center">
+  🔐 Secure Evidence &nbsp; | &nbsp; 🤖 AI Deepfake Detection &nbsp; | &nbsp; ⛓️ Blockchain Integrity
+</p>
 
 ---
 
@@ -109,8 +106,10 @@ Digital evidence faces several challenges:
 
 ---
 
+
 ## 🧱 System Architecture
-```
+
+```mermaid
 flowchart TD
     A["User"] --> B["React Frontend"]
     B --> C["Node.js + Express Backend"]
@@ -128,6 +127,7 @@ flowchart TD
     B --> K["Evidence Verification"]
     K --> D
 ```
+
 
 ---
 
@@ -252,8 +252,6 @@ Legal admissibility remains subject to applicable laws and judicial authorities.
 
 ---
 
-\<p align="center">\
-&#x20; ⭐ If you find Attest useful, consider starring the repository!\
-&#x20; \<br/>\<br/>\
-&#x20; \<strong>Built with ❤️ by Team AlgoFoge\</strong>\
-\</p>  add that annimation part in this
+<p align="center">
+  <strong>Built with ❤️ by Team AlgoFoge</strong>
+</p>
