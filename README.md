@@ -14,9 +14,11 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/anand1-here/Attest.co/main/assets/attest-hash.gif"
-       width="750"
-       alt="Attest SHA-256 Hash Animation"/>
+  <img
+    src="https://raw.githubusercontent.com/anand1-here/Attest.co/main/assets/attest-hash.gif"
+    width="750"
+    alt="Attest SHA-256 Hashing Animation"
+  />
 </p>
 
 <p align="center">
