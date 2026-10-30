@@ -1,0 +1,21 @@
+{
+  "name": "attest",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Blockchain chain-of-custody for video evidence with deepfake detection",
+  "scripts": {
+    "chain": "ganache --wallet.deterministic --database.dbPath chain-data --server.port 8545 --chain.chainId 1337 --logging.quiet",
+    "compile": "node scripts/compile.js",
+    "deploy": "node scripts/deploy.js",
+    "test": "node scripts/test-contract.js",
+    "db:init": "node backend/scripts/init-db.js",
+    "install:all": "npm install && npm --prefix backend install && npm --prefix frontend install",
+    "start:backend": "npm --prefix backend start",
+    "start:frontend": "npm --prefix frontend start"
+  },
+  "devDependencies": {
+    "ethers": "^5.8.0",
+    "solc": "0.8.20",
+    "ganache": "7.9.2"
+  }
+}

@@ -1,0 +1,19 @@
+node_modules/
+build/
+.env
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.venv/
+venv/
+.vscode/
+
+# generated
+chain-data/
+artifacts/
+cache/
+deployment.json
+backend/uploads/*
+!backend/uploads/.gitkeep
